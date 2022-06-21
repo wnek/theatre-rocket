@@ -10,7 +10,6 @@ export default function Model({ ...props }) {
   const { nodes, materials } = useGLTF('/space-transformed.glb')
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Cube001.geometry} material={nodes.Cube001.material} />
       <mesh geometry={nodes.BackPlanet.geometry} material={materials.backPlanetMaterial} />
       <mesh geometry={nodes.smallPlanet.geometry} material={materials.smallPlanetMaterial} />
       <mesh geometry={nodes.nebula.geometry} material={materials.nebulaMaterial} />
@@ -67,6 +66,7 @@ export default function Model({ ...props }) {
       <mesh geometry={nodes.Rock_5042.geometry} material={materials.Rock_set} position={[38.31, -23.79, -41.08]} rotation={[-0.13, 0.73, 2.21]} scale={[3.9, 8.97, 8.35]} />
       <mesh geometry={nodes.shoes_geo.geometry} material={materials['Material.002']} position={[-4.75, -4.84, 13.45]} rotation={[0, -0.66, 0]} />
       <mesh geometry={nodes.cha_geo.geometry} material={materials['Material.002']} position={[-4.73, -3.87, 13.48]} rotation={[0, -0.66, 0]} />
+      <mesh geometry={nodes.rocket.geometry} material={materials['Material.003']} position={[0, -3.99, 0]} rotation={[0, 0.51, 0]} scale={0.71} />
     </group>
   )
 }
