@@ -159,13 +159,13 @@ export default function App() {
         shadow-mapSize-height={4096}
       />
 
-      <Sparkles
+      {/* <Sparkles
         count={400}
         scale={40}
         size={40}
         speed={0.4}
         opacity={0.001}
-      />
+      /> */}
       
       <Controls />
       
